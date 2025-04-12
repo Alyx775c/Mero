@@ -1,0 +1,10 @@
+#ifndef _DECLARITIVE_MERO_STATEMENTS
+#define _DECLARITIVE_MERO_STATEMENTS
+
+#include "MERO_TYPES.hpp"
+
+#ifndef MERO_WINDOW
+#define MERO_WINDOW 
+#endif
+
+#endif
