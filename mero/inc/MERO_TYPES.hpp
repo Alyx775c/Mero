@@ -1,6 +1,8 @@
 #ifndef _MERO_TYPES
 #define _MERO_TYPES
 
-using CREATE_WINDOW = void(*)();
+#include <GLFW/glfw3.h>
+
+using mWINDOW = GLFWwindow(*);
 
 #endif
