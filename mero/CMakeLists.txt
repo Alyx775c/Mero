@@ -12,13 +12,18 @@ add_library(mero_lib
 
 target_include_directories(mero_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
-)
-
-target_include_directories(mero_lib PUBLIC
     glfw/include
 )
 
-target_link_libraries(mero_lib glfw)
+# Correctly find and link SDL2
+find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
+
+target_link_libraries(mero_lib
+    SDL2::SDL2
+    SDL2_image::SDL2_image
+    glfw
+)
 
 set_target_properties(mero_lib PROPERTIES EXPORT_NAME MeroLib)
 

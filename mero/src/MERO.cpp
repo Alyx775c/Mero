@@ -29,6 +29,7 @@ MERO::MERO(Vector2 size, const char* name, bool testing)
 
     glfwSetErrorCallback(error_callback);
     window = new C_MeroWindow(size.x, size.y, name);
+    
 }
 
 MERO::~MERO()

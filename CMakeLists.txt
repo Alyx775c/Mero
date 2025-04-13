@@ -7,6 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 enable_testing()
 
+add_subdirectory(glad)
 add_subdirectory(mero)
 add_subdirectory(tests)
 

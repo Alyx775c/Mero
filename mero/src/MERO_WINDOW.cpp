@@ -10,6 +10,8 @@ C_MeroWindow::C_MeroWindow(int x, int y, const char* name, GLFWmonitor* mon, GLF
     } else {
         MERO_LOG::getInstance().LOG("Failed to initialize window", true);
     }
+
+    glfwMakeContextCurrent(window);
 }
 
 C_MeroWindow::~C_MeroWindow()
