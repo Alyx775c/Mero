@@ -14,6 +14,11 @@ public:
         components.push_back(comp);
     }
 
+    int Size()
+    {
+        return components.size();
+    }
+
 private:
     std::vector<C_BaseComponent*> components;
 };

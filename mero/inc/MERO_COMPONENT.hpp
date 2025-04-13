@@ -5,17 +5,18 @@
 
 class C_BaseComponent 
 {
-public:
+protected:
     C_BaseComponent()
     {
         mECS->PushComponent(this);
     }
 
-    ~C_BaseComponent()
+public:
+    virtual ~C_BaseComponent()
     {
         
     }
-private:
+    
     static C_mECS* mECS;
 };
 

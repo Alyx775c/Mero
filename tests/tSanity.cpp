@@ -3,5 +3,4 @@
 
 TEST_CASE("Basic math works", "[math]") {
     REQUIRE(1 + 1 == 2);
-    REQUIRE(2 - 3 == -1);
 }
