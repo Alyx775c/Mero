@@ -1,4 +1,4 @@
-#include "MERO_CLASSES.hpp"
+#include "MERO_WINDOW.hpp"
 
 #include "MERO.hpp"
 

@@ -13,15 +13,18 @@
 #include <filesystem>
 #include <format>
 #include <string>
+#include <vector>
 #include <GLFW/glfw3.h>
 
 #ifdef _WIN32
 #include <Windows.h>
 #endif
 
-#include "MERO_CLASSES.hpp"
+#include "MERO_COMPONENT.hpp"
+#include "MERO_ECS.hpp"
 #include "MERO_LOG.hpp"
 #include "MERO_TYPES.hpp"
+#include "MERO_WINDOW.hpp"
 
 /**
  * Main MERO class, holds all MERO related data besides types
@@ -45,7 +48,9 @@ public:
         return window->isValid();
     }
 private:
+    // has to be a pointer because of the fact that the ctor would shit itself otherwise
     C_MeroWindow* window;
+    // no ent list?? go see MERO_ECS for the actualy ecs
     bool INIT;
 };
 

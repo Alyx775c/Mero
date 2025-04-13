@@ -28,7 +28,7 @@ MERO::MERO(Vector2 size, const char* name, bool testing)
         MERO_LOG::getInstance().LOG(tFormat("Successfully initialized glfw!", testing));
 
     glfwSetErrorCallback(error_callback);
-    window = new C_MeroWindow(size.x, size.y, name); 
+    window = new C_MeroWindow(size.x, size.y, name);
 }
 
 MERO::~MERO()
