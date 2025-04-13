@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 3.10.0)
 
+set(CMAKE_CXX_STANDARD 23) # Update to the latest C++ standard
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+file(GLOB_RECURSE SRC_FILES *.cpp)
+
 add_library(mero_lib
-    src/mero.cpp 
+    ${SRC_FILES}
 )
 
 target_include_directories(mero_lib PUBLIC
