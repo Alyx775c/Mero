@@ -12,11 +12,17 @@ add_library(mero_lib
 
 target_include_directories(mero_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
+    glad
 )
 
 find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
+
+target_link_libraries(mero_lib
+    glfw
+    vulkan
+)
 
 set_target_properties(mero_lib PROPERTIES EXPORT_NAME MeroLib)
 

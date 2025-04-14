@@ -9,7 +9,7 @@
 class C_MeroWindow
 {
 private:
-	mWINDOW *window;
+	mWINDOW window;
 public:
 	C_MeroWindow(int x, int y, const char* name);
 	~C_MeroWindow();

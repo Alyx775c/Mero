@@ -15,6 +15,10 @@
 #include <string>
 #include <vector>
 
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+
 #ifdef _WIN32
 #include <Windows.h>
 #endif
@@ -37,7 +41,7 @@ public:
      * @param name Name of the new window
      * @param testing Configures more verbose output ( planned in the future )
      */
-    MERO(Vector2 size, const char* name, bool testing = false);
+    MERO(glm::ivec2 size, const char* name, bool testing = false);
     ~MERO();
     
     /**

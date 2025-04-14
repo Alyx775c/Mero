@@ -15,24 +15,28 @@ std::string tFormat(std::string str, bool inTest) {
     return str;
 }
 
-MERO::MERO(Vector2 size, const char* name, bool testing)
+MERO::MERO(glm::ivec2 size, const char* name, bool testing)
 {
     if (INIT)
         return;
 
     INIT = true;
     
-    /*if (!glfwInit())
+    if (!glfwInit())
         MERO_LOG::getInstance().LOG(tFormat(std::format("Failed to initialize GLFW on window: {}", name), testing), true);
     else
-        MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));*/
-    //glfwSetErrorCallback(error_callback);
+        MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
+    glfwSetErrorCallback(error_callback);
+
+    uint32_t ext = 0;
+    vkEnumerateInstanceExtensionProperties(nullptr, &ext, nullptr);
+
+    MERO_LOG::getInstance().LOG(tFormat(std::format("Total of vulkan ext: {}", ext), testing));
 
     window = new C_MeroWindow(size.x, size.y, name);
-    
 }
 
 MERO::~MERO()
 {
-
+    glfwTerminate();
 }
