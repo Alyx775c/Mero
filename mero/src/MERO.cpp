@@ -22,17 +22,17 @@ MERO::MERO(Vector2 size, const char* name, bool testing)
 
     INIT = true;
     
-    if (!glfwInit())
+    /*if (!glfwInit())
         MERO_LOG::getInstance().LOG(tFormat(std::format("Failed to initialize GLFW on window: {}", name), testing), true);
     else
-        MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
+        MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));*/
+    //glfwSetErrorCallback(error_callback);
 
-    glfwSetErrorCallback(error_callback);
     window = new C_MeroWindow(size.x, size.y, name);
     
 }
 
 MERO::~MERO()
 {
-    glfwTerminate();
+
 }

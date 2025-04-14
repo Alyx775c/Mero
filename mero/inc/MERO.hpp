@@ -15,12 +15,6 @@
 #include <string>
 #include <vector>
 
-#include <SDL.h>
-#include <SDL_image.h>
-
-#include <GL/gl.h>
-#include <GLFW/glfw3.h>
-
 #ifdef _WIN32
 #include <Windows.h>
 #endif
