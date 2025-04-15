@@ -8,13 +8,13 @@
  */
 class C_MeroWindow
 {
-private:
-	mWINDOW window;
 public:
-	C_MeroWindow(int x, int y, const char* name);
+	mWINDOW window;
+	C_MeroWindow(int x, int y, const char *name);
 	~C_MeroWindow();
 
-	bool isValid() {
+	bool isValid()
+	{
 		return true;
 		// return !(window == nullptr);
 		// TODO: implement lmao

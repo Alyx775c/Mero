@@ -50,6 +50,8 @@ public:
     bool isWindowValid() {
         return window->isValid();
     }
+
+    void Poll();
 private:
     // has to be a pointer because of the fact that the ctor would shit itself otherwise
     C_MeroWindow* window;

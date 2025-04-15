@@ -15,13 +15,17 @@ target_include_directories(mero_lib PUBLIC
     glad
 )
 
-find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
 
 target_link_libraries(mero_lib
     glfw
-    vulkan
+    dl
+    pthread
+    X11
+    Xxf86vm
+    Xrandr
+    Xi
 )
 
 set_target_properties(mero_lib PROPERTIES EXPORT_NAME MeroLib)
