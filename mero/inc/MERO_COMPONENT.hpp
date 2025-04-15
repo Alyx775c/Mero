@@ -5,7 +5,7 @@
 
 #include "MERO_ECS.hpp"
 
-class C_BaseComponent 
+class C_BaseComponent
 {
 protected:
     C_BaseComponent()
@@ -19,17 +19,30 @@ protected:
 public:
     virtual ~C_BaseComponent()
     {
-        
     }
-    
-    static C_mECS* mECS;
+
+    static C_mECS *mECS;
 };
 
-class MERO_SPRITE:
-    public C_BaseComponent
+class MERO_SPRITE
 {
 protected:
-    std::string& path;
+    std::string path;
+
+public:
+    MERO_SPRITE(const std::string &texturePath)
+        : path(texturePath)
+    {
+        LoadTexture();
+    }
+
+    bool LoadTexture() {
+        return true;
+    };
+
+    ~MERO_SPRITE() {
+
+    };
 };
 
 #endif

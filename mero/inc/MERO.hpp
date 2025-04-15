@@ -1,21 +1,18 @@
-#ifndef _MERO
+#ifndef _MERO_HPP
+#define _MERO_HPP
 
 #ifndef _RELEASE
 #define _DEBUG
 #endif
 
 #include <iostream>
-
 #include <source_location>
-
-// i promise this isnt being used to scan files, check MERO_LOG.hpp
-// for more information regarding why this was included
 #include <filesystem>
 #include <format>
 #include <string>
 #include <vector>
 
-#define GLFW_INCLUDE_VULKAN
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
@@ -26,7 +23,6 @@
 #include "MERO_COMPONENT.hpp"
 #include "MERO_ECS.hpp"
 #include "MERO_LOG.hpp"
-#include "MERO_TYPES.hpp"
 #include "MERO_WINDOW.hpp"
 
 /**
@@ -55,7 +51,7 @@ public:
 private:
     // has to be a pointer because of the fact that the ctor would shit itself otherwise
     C_MeroWindow* window;
-    // no ent list?? go see MERO_ECS for the actualy ecs
+    // no ent list?? go see MERO_ECS for the actual ecs
     bool INIT;
 };
 

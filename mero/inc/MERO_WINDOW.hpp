@@ -1,7 +1,7 @@
-#ifndef _MERO_WINDOW_DEF
-#define _MERO_WINDOW_DEF
+#ifndef _MERO_WINDOW_HPP
+#define _MERO_WINDOW_HPP
 
-#include "MERO_TYPES.hpp"
+typedef struct GLFWwindow GLFWwindow;
 
 /**
  * Holds the window information, soon to be framebuffers too
@@ -9,7 +9,7 @@
 class C_MeroWindow
 {
 public:
-	mWINDOW window;
+	GLFWwindow* window;
 	C_MeroWindow(int x, int y, const char *name);
 	~C_MeroWindow();
 

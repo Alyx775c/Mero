@@ -1,5 +1,8 @@
 #include "MERO_COMPONENT.hpp"
 
-#include "MERO.hpp"
+#include <stb_image.hpp>
+#include <iostream>
 
-C_mECS* C_BaseComponent::mECS = new C_mECS();
+#include "MERO_ECS.hpp"
+
+C_mECS *C_BaseComponent::mECS = new C_mECS();

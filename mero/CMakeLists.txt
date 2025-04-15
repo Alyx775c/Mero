@@ -10,13 +10,14 @@ add_library(mero_lib
     ${SRC_FILES}
 )
 
-target_include_directories(mero_lib PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/inc
-    glad
-)
-
+find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
+
+target_include_directories(mero_lib PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/glad/include # Corrected path
+)
 
 target_link_libraries(mero_lib
     glfw

@@ -3,7 +3,6 @@
 
 #include <vector>
 
-// Forward declaration of C_BaseComponent
 class C_BaseComponent;
 
 class C_mECS
