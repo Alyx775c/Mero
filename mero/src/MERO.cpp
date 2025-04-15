@@ -15,7 +15,7 @@ std::string tFormat(std::string str, bool inTest) {
     return str;
 }
 
-MERO::MERO(Vector2 size, const char* name, bool testing)
+MERO::MERO(glm::ivec2 size, const char* name, bool testing)
 {
     if (INIT)
         return;
@@ -26,13 +26,21 @@ MERO::MERO(Vector2 size, const char* name, bool testing)
         MERO_LOG::getInstance().LOG(tFormat(std::format("Failed to initialize GLFW on window: {}", name), testing), true);
     else
         MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
-
     glfwSetErrorCallback(error_callback);
+
     window = new C_MeroWindow(size.x, size.y, name);
-    
+
+    Poll();
+}
+
+void MERO::Poll()
+{
+    if (!glfwWindowShouldClose(window->window))
+        glfwPollEvents();
 }
 
 MERO::~MERO()
 {
     glfwTerminate();
 }
+

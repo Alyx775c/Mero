@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 
-set(CMAKE_CXX_STANDARD 23) # Update to the latest C++ standard
+set(CMAKE_CXX_STANDARD 20) # Update to the latest C++ standard
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -12,17 +12,20 @@ add_library(mero_lib
 
 target_include_directories(mero_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
-    glfw/include
+    glad
 )
 
-# Correctly find and link SDL2
-find_package(SDL2 REQUIRED)
-find_package(SDL2_image REQUIRED)
+find_package(glfw3 REQUIRED)
+find_package(glm REQUIRED)
 
 target_link_libraries(mero_lib
-    SDL2::SDL2
-    SDL2_image::SDL2_image
     glfw
+    dl
+    pthread
+    X11
+    Xxf86vm
+    Xrandr
+    Xi
 )
 
 set_target_properties(mero_lib PROPERTIES EXPORT_NAME MeroLib)

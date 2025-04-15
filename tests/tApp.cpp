@@ -15,7 +15,7 @@ public:
 
 TEST_CASE("Test app", "[app]")
 {
-    MERO *mero = new MERO(Vector2(400, 400), "test app", true);
+    MERO *mero = new MERO(glm::ivec2(1, 1), "test app", true);
     mTestComponent *component = new mTestComponent();
 
     REQUIRE(C_BaseComponent::mECS->Size() == 1);

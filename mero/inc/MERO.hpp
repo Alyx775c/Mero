@@ -15,11 +15,9 @@
 #include <string>
 #include <vector>
 
-#include <SDL.h>
-#include <SDL_image.h>
-
-#include <GL/gl.h>
+#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -43,7 +41,7 @@ public:
      * @param name Name of the new window
      * @param testing Configures more verbose output ( planned in the future )
      */
-    MERO(Vector2 size, const char* name, bool testing = false);
+    MERO(glm::ivec2 size, const char* name, bool testing = false);
     ~MERO();
     
     /**
@@ -52,6 +50,8 @@ public:
     bool isWindowValid() {
         return window->isValid();
     }
+
+    void Poll();
 private:
     // has to be a pointer because of the fact that the ctor would shit itself otherwise
     C_MeroWindow* window;
