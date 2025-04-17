@@ -29,25 +29,26 @@ MERO::MERO(glm::ivec2 size, const char *name, bool testing)
         MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
     glfwSetErrorCallback(error_callback);
 
-    /*
-    if (glewInit() != GLEW_OK)
-    {
-        std::cerr << "Failed to initialize GLEW" << std::endl;
-        return;
-    }*/
-
     window = new C_MeroWindow(size.x, size.y, name);
 
-    Poll();
+    if (!window)
+    {
+        MERO_LOG::getInstance().LOG("Failed to initialize C_MeroWindow or its GLFW window.");
+        return;
+    }
 }
 
-void MERO::Poll()
+void MERO::MainLoop()
 {
-    if (!glfwWindowShouldClose(window->window))
-        glfwPollEvents();
+    glfwPollEvents();
+
+    Update();
+    Render();
+
+    window->SwapBuffers();
 }
 
 MERO::~MERO()
 {
-    glfwTerminate();
+    Shutdown();
 }

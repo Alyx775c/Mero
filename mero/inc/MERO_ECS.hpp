@@ -8,10 +8,7 @@ class C_BaseComponent;
 class C_mECS
 {
 public:
-    void PushComponent(C_BaseComponent* comp)
-    {
-        components.push_back(comp);
-    }
+    void PushComponent(C_BaseComponent* comp); 
 
     int Size()
     {

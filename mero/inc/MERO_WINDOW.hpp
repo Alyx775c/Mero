@@ -9,16 +9,19 @@ typedef struct GLFWwindow GLFWwindow;
 class C_MeroWindow
 {
 public:
-	GLFWwindow* window;
 	C_MeroWindow(int x, int y, const char *name);
 	~C_MeroWindow();
 
+	void SwapBuffers();
+	bool ShouldClose();
+
 	bool isValid()
 	{
-		return true;
-		// return !(window == nullptr);
-		// TODO: implement lmao
+		return !(window == nullptr);
 	};
+
+private:
+	GLFWwindow *window;
 };
 
 #endif

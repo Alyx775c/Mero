@@ -8,15 +8,24 @@
 class C_BaseComponent
 {
 protected:
-    C_BaseComponent()
-    {
-        mECS->PushComponent(this);
+    C_BaseComponent(const std::string& componentName)
+        : name(componentName)
+    { }
+
+    std::string name;
+
+public:
+    std::string GetName() {
+        return name;
     }
 
     virtual void Initialize() {};
     virtual void Tick() {};
 
-public:
+    void Register() {
+        mECS->PushComponent(this);
+    }
+
     virtual ~C_BaseComponent()
     {
     }

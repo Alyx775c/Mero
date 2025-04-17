@@ -20,7 +20,9 @@ target_include_directories(mero_lib PUBLIC
 )
 
 target_link_libraries(mero_lib
+    OpenGL
     glfw
+    glad
     dl
     pthread
     X11
