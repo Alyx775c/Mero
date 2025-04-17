@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['shouldclosewindow_0',['ShouldCloseWindow',['../dc/d07/classMERO.html#a8376c0029c4b6e32623ce8a545609e2d',1,'MERO']]]
+  ['mainloop_0',['MainLoop',['../dc/d07/classMERO.html#a9d32a2fda78d2f66f467a763ff803a7c',1,'MERO']]],
+  ['mero_1',['MERO',['../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333',1,'MERO']]]
 ];

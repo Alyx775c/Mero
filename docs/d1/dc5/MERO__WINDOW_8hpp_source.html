@@ -105,27 +105,33 @@ $(function(){initNavTree('d1/dc5/MERO__WINDOW_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">typedef</span> <span class="keyword">struct </span>GLFWwindow GLFWwindow;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d6/d92/classC__MeroWindow.html">    9</a></span><span class="keyword">class </span>C_MeroWindow</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    C_MeroWindow(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    ~C_MeroWindow();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> SwapBuffers();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> ShouldClose();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> isValid()</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> !(window == <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    };</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    GLFWwindow *window;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d6/d92/classC__MeroWindow.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#ac383ee9660aa4f790d7d14e705afc012">C_MeroWindow</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#ac383ee9660aa4f790d7d14e705afc012">C_MeroWindow</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#ac383ee9660aa4f790d7d14e705afc012">~C_MeroWindow</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#adcc2454fb10fac76638b86306fbba225">SwapBuffers</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#af1e23e76240fa246e7389ebb58fb9cfd">ShouldClose</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d6/d92/classC__MeroWindow.html#a4df58c1339a42b5ac5266847fc999690">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d92/classC__MeroWindow.html#a4df58c1339a42b5ac5266847fc999690">isValid</a>()</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> !(window == <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    GLFWwindow *window;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassC__MeroWindow_html_a4df58c1339a42b5ac5266847fc999690"><div class="ttname"><a href="../../d6/d92/classC__MeroWindow.html#a4df58c1339a42b5ac5266847fc999690">C_MeroWindow::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdoc">Is the window a valid window?</div><div class="ttdef"><b>Definition</b> MERO_WINDOW.hpp:38</div></div>
+<div class="ttc" id="aclassC__MeroWindow_html_ac383ee9660aa4f790d7d14e705afc012"><div class="ttname"><a href="../../d6/d92/classC__MeroWindow.html#ac383ee9660aa4f790d7d14e705afc012">C_MeroWindow::C_MeroWindow</a></div><div class="ttdeci">C_MeroWindow(int x, int y, const char *name)</div><div class="ttdoc">Construct a new C_MeroWindow object.</div><div class="ttdef"><b>Definition</b> MERO_WINDOW.cpp:4</div></div>
+<div class="ttc" id="aclassC__MeroWindow_html_adcc2454fb10fac76638b86306fbba225"><div class="ttname"><a href="../../d6/d92/classC__MeroWindow.html#adcc2454fb10fac76638b86306fbba225">C_MeroWindow::SwapBuffers</a></div><div class="ttdeci">void SwapBuffers()</div><div class="ttdoc">Swaps the buffers.</div><div class="ttdef"><b>Definition</b> MERO_WINDOW.cpp:26</div></div>
+<div class="ttc" id="aclassC__MeroWindow_html_af1e23e76240fa246e7389ebb58fb9cfd"><div class="ttname"><a href="../../d6/d92/classC__MeroWindow.html#af1e23e76240fa246e7389ebb58fb9cfd">C_MeroWindow::ShouldClose</a></div><div class="ttdeci">bool ShouldClose()</div><div class="ttdoc">Should the window close?</div><div class="ttdef"><b>Definition</b> MERO_WINDOW.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

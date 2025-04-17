@@ -4,17 +4,37 @@
 typedef struct GLFWwindow GLFWwindow;
 
 /**
- * Holds the window information, soon to be framebuffers too
+ * @brief Holds window information
+ *
  */
 class C_MeroWindow
 {
 public:
+	/**
+	 * @brief Construct a new C_MeroWindow object
+	 *
+	 * @param x Width of window
+	 * @param y Height of window
+	 * @param name Name of the new window
+	 */
 	C_MeroWindow(int x, int y, const char *name);
 	~C_MeroWindow();
 
+	/**
+	 * @brief Swaps the buffers
+	 *
+	 */
 	void SwapBuffers();
+	/**
+	 * @brief Should the window close?
+	 *
+	 */
 	bool ShouldClose();
 
+	/**
+	 * @brief Is the window a valid window?
+	 *
+	 */
 	bool isValid()
 	{
 		return !(window == nullptr);

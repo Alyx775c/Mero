@@ -28,13 +28,15 @@
 #include "MERO_WINDOW.hpp"
 
 /**
- * Main MERO class, holds all MERO related data besides types
- * and structs
+ * @brief Main MERO class, holds all important info
+ * 
  */
 class MERO
 {
 public:
     /**
+     * @brief Makes a new MERO instance
+     * 
      * @param size Size of window
      * @param name Name of the new window
      * @param testing Configures more verbose output ( planned in the future )
@@ -42,6 +44,10 @@ public:
     MERO(glm::ivec2 size, const char* name, bool testing = false);
     ~MERO();
 
+    /**
+     * @brief Shuts GLFW and the window down
+     * 
+     */
     void Shutdown() {
         if (window)
         {
@@ -52,19 +58,19 @@ public:
     }
 
     /**
-     * Runs all of the main code
+     * @brief Runs all of the main code
      */
     void MainLoop();
     
     /**
-     * Checks if the current C_MeroWindow is valid
+     * @brief Checks if the current C_MeroWindow is valid
      */
     bool isWindowValid() {
         return window->isValid();
     }
 
     /**
-     * Should I close the window?
+     * @brief Should I close the window?
      */
     bool ShouldCloseWindow() {
         return window->ShouldClose();

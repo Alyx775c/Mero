@@ -5,6 +5,10 @@
 
 #include "MERO_ECS.hpp"
 
+/**
+ * @brief The base component class, dont use, inherit
+ * 
+ */
 class C_BaseComponent
 {
 protected:
@@ -19,9 +23,22 @@ public:
         return name;
     }
 
+    /**
+     * @brief Initializiation method
+     * 
+     */
     virtual void Initialize() {};
+
+    /**
+     * @brief Method to call on tick
+     * 
+     */
     virtual void Tick() {};
 
+    /**
+     * @brief Call! Check out tApp.cpp for example
+     * 
+     */
     void Register() {
         mECS->PushComponent(this);
     }
@@ -30,9 +47,14 @@ public:
     {
     }
 
+    // Don't assign this is assigned in MERO_COMPONENT.cpp
     static C_mECS *mECS;
 };
 
+/**
+ * @brief MERO class helper for sprties
+ * 
+ */
 class MERO_SPRITE
 {
 protected:
