@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_5fcallback_0',['error_callback',['../d4/dcc/MERO_8cpp.html#a4ee391c8bab624943c822faafb2c320e',1,'MERO.cpp']]]
+  ['log_0',['LOG',['../d0/dd8/classMERO__LOG.html#a887f8f8ef899f42e58fc9a89c7a77939',1,'MERO_LOG']]]
 ];

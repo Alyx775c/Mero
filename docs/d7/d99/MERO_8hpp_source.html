@@ -100,11 +100,11 @@ $(function(){initNavTree('d7/d99/MERO_8hpp_source.html','../../'); initResizable
   <div class="headertitle"><div class="title">MERO.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d7/d99/MERO_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _MERO_HPP</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _MERO_HPP</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _MERO_HPP</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef _RELEASE</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d7/d99/MERO_8hpp.html#a152fc5203b90b1cff03b7b78579b8f52">    5</a></span><span class="preprocessor">#define _DEBUG</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define _DEBUG</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -124,80 +124,65 @@ $(function(){initNavTree('d7/d99/MERO_8hpp_source.html','../../'); initResizable
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dec/MERO__COMPONENT_8hpp.html">MERO_COMPONENT.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d04/MERO__ECS_8hpp.html">MERO_ECS.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d86/MERO__LOG_8hpp.html">MERO_LOG.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/dc5/MERO__WINDOW_8hpp.html">MERO_WINDOW.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;MERO_COMPONENT.hpp&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;MERO_ECS.hpp&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;MERO_LOG.hpp&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;MERO_WINDOW.hpp&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html">   34</a></span><span class="keyword">class </span><a class="code hl_function" href="../../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333">MERO</a></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="../../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333">MERO</a>(glm::ivec2 size, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">bool</span> testing = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="../../dc/d07/classMERO.html#a48cc436d7bf743b0653d14e8066fa266">~MERO</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="../../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333">~MERO</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#aaae21bbc912df6f3a31526f2255fd451">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#aaae21bbc912df6f3a31526f2255fd451">Shutdown</a>() {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a>)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> Shutdown() {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span> (window)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">delete</span> <a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">delete</span> window;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            window = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        glfwTerminate(); </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#a9d32a2fda78d2f66f467a763ff803a7c">MainLoop</a>();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#a6acca05ab44dd40a0f5be01227e0324f">   62</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#a6acca05ab44dd40a0f5be01227e0324f">isWindowValid</a>() {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a>-&gt;isValid();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> window-&gt;isValid();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#a8376c0029c4b6e32623ce8a545609e2d">   69</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#a8376c0029c4b6e32623ce8a545609e2d">ShouldCloseWindow</a>() {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a>-&gt;ShouldClose();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> window-&gt;ShouldClose();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#a725b0aeab880050ae80cd861fe48ef4e">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#a725b0aeab880050ae80cd861fe48ef4e">Update</a>() {}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> Update() {}</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#a013ca38e2e72e820438daf4940946946">   75</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d07/classMERO.html#a013ca38e2e72e820438daf4940946946">Render</a>() {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> Render() {</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// has to be a pointer because of the fact that the ctor would shit itself otherwise</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">   80</a></span>    <a class="code hl_class" href="../../d6/d92/classC__MeroWindow.html">C_MeroWindow</a>* <a class="code hl_variable" href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">window</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    C_MeroWindow* window;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// no ent list?? go see MERO_ECS for the actual ecs</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../dc/d07/classMERO.html#a8cc52de7c4f65d77ff22fe169efcec07">   82</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../dc/d07/classMERO.html#a8cc52de7c4f65d77ff22fe169efcec07">INIT</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> INIT;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aMERO__COMPONENT_8hpp_html"><div class="ttname"><a href="../../d3/dec/MERO__COMPONENT_8hpp.html">MERO_COMPONENT.hpp</a></div></div>
-<div class="ttc" id="aMERO__ECS_8hpp_html"><div class="ttname"><a href="../../d6/d04/MERO__ECS_8hpp.html">MERO_ECS.hpp</a></div></div>
-<div class="ttc" id="aMERO__LOG_8hpp_html"><div class="ttname"><a href="../../d4/d86/MERO__LOG_8hpp.html">MERO_LOG.hpp</a></div></div>
-<div class="ttc" id="aMERO__WINDOW_8hpp_html"><div class="ttname"><a href="../../d1/dc5/MERO__WINDOW_8hpp.html">MERO_WINDOW.hpp</a></div></div>
-<div class="ttc" id="aclassC__MeroWindow_html"><div class="ttname"><a href="../../d6/d92/classC__MeroWindow.html">C_MeroWindow</a></div><div class="ttdef"><b>Definition</b> MERO_WINDOW.hpp:10</div></div>
-<div class="ttc" id="aclassMERO_html_a013ca38e2e72e820438daf4940946946"><div class="ttname"><a href="../../dc/d07/classMERO.html#a013ca38e2e72e820438daf4940946946">MERO::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition</b> MERO.hpp:75</div></div>
-<div class="ttc" id="aclassMERO_html_a48cc436d7bf743b0653d14e8066fa266"><div class="ttname"><a href="../../dc/d07/classMERO.html#a48cc436d7bf743b0653d14e8066fa266">MERO::~MERO</a></div><div class="ttdeci">~MERO()</div><div class="ttdef"><b>Definition</b> MERO.cpp:51</div></div>
 <div class="ttc" id="aclassMERO_html_a6acca05ab44dd40a0f5be01227e0324f"><div class="ttname"><a href="../../dc/d07/classMERO.html#a6acca05ab44dd40a0f5be01227e0324f">MERO::isWindowValid</a></div><div class="ttdeci">bool isWindowValid()</div><div class="ttdef"><b>Definition</b> MERO.hpp:62</div></div>
-<div class="ttc" id="aclassMERO_html_a725b0aeab880050ae80cd861fe48ef4e"><div class="ttname"><a href="../../dc/d07/classMERO.html#a725b0aeab880050ae80cd861fe48ef4e">MERO::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> MERO.hpp:73</div></div>
 <div class="ttc" id="aclassMERO_html_a8376c0029c4b6e32623ce8a545609e2d"><div class="ttname"><a href="../../dc/d07/classMERO.html#a8376c0029c4b6e32623ce8a545609e2d">MERO::ShouldCloseWindow</a></div><div class="ttdeci">bool ShouldCloseWindow()</div><div class="ttdef"><b>Definition</b> MERO.hpp:69</div></div>
-<div class="ttc" id="aclassMERO_html_a8cc52de7c4f65d77ff22fe169efcec07"><div class="ttname"><a href="../../dc/d07/classMERO.html#a8cc52de7c4f65d77ff22fe169efcec07">MERO::INIT</a></div><div class="ttdeci">bool INIT</div><div class="ttdef"><b>Definition</b> MERO.hpp:82</div></div>
 <div class="ttc" id="aclassMERO_html_a9d32a2fda78d2f66f467a763ff803a7c"><div class="ttname"><a href="../../dc/d07/classMERO.html#a9d32a2fda78d2f66f467a763ff803a7c">MERO::MainLoop</a></div><div class="ttdeci">void MainLoop()</div><div class="ttdef"><b>Definition</b> MERO.cpp:41</div></div>
-<div class="ttc" id="aclassMERO_html_aaae21bbc912df6f3a31526f2255fd451"><div class="ttname"><a href="../../dc/d07/classMERO.html#aaae21bbc912df6f3a31526f2255fd451">MERO::Shutdown</a></div><div class="ttdeci">void Shutdown()</div><div class="ttdef"><b>Definition</b> MERO.hpp:45</div></div>
-<div class="ttc" id="aclassMERO_html_ad803dd4714247e86d00ceb02a3cd03aa"><div class="ttname"><a href="../../dc/d07/classMERO.html#ad803dd4714247e86d00ceb02a3cd03aa">MERO::window</a></div><div class="ttdeci">C_MeroWindow * window</div><div class="ttdef"><b>Definition</b> MERO.hpp:80</div></div>
 <div class="ttc" id="aclassMERO_html_ae90a388052771d160de7603c23d10333"><div class="ttname"><a href="../../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333">MERO::MERO</a></div><div class="ttdeci">MERO(glm::ivec2 size, const char *name, bool testing=false)</div><div class="ttdef"><b>Definition</b> MERO.cpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../d7/d99/MERO_8hpp.html">MERO.hpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><b>MERO.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

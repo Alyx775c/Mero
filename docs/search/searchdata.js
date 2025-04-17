@@ -1,36 +1,21 @@
 var indexSectionsWithContent =
 {
-  0: "_cegilmnoprstuw~",
-  1: "cms",
-  2: "ms",
-  3: "cegilmoprstu~",
-  4: "ceimnprsw",
-  5: "gs",
-  6: "s",
-  7: "_s"
+  0: "cilms",
+  1: "cm",
+  2: "ilms"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables",
-  5: "typedefs",
-  6: "enumvalues",
-  7: "defines"
+  2: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables",
-  5: "Typedefs",
-  6: "Enumerator",
-  7: "Macros"
+  2: "Functions"
 };
 

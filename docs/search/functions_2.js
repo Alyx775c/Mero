@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get_5fname_0',['GET_NAME',['../d5/dbd/MERO__LOG_8cpp.html#a80f32e37ca364df14b62c448770b3fe0',1,'MERO_LOG.cpp']]],
-  ['getinstance_1',['getInstance',['../d0/dd8/classMERO__LOG.html#ac70c7f75fcc6a6815c74365d356fa109',1,'MERO_LOG']]],
-  ['getname_2',['GetName',['../df/d5f/classC__BaseComponent.html#ac7f62f7784ba0108fd29de718f6764bb',1,'C_BaseComponent']]]
+  ['mainloop_0',['MainLoop',['../dc/d07/classMERO.html#a9d32a2fda78d2f66f467a763ff803a7c',1,'MERO']]],
+  ['mero_1',['MERO',['../dc/d07/classMERO.html#ae90a388052771d160de7603c23d10333',1,'MERO']]]
 ];
