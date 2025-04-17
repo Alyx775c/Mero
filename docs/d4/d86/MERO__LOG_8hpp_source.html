@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">Mero OpenGL Helper
    </div>
+   <div id="projectbrief">Mero is a library used for helping with opengl</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -105,39 +106,46 @@ $(function(){initNavTree('d4/d86/MERO__LOG_8hpp_source.html','../../'); initResi
   <div class="headertitle"><div class="title">MERO_LOG.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MERO_LOG_HPP</span></div>
+<a href="../../d4/d86/MERO__LOG_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MERO_LOG_HPP</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MERO_LOG_HPP</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;source_location&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d0/dd8/classMERO__LOG.html">   10</a></span><span class="keyword">class </span>MERO_LOG</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d0/dd8/classMERO__LOG.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#a887f8f8ef899f42e58fc9a89c7a77939">LOG</a>(std::string data, <span class="keywordtype">bool</span> err = <span class="keyword">false</span>, std::source_location cur = std::source_location::current());</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    MERO_LOG(<span class="keyword">const</span> MERO_LOG&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    MERO_LOG&amp; operator=(<span class="keyword">const</span> MERO_LOG&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">   20</a></span>    <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d0/dd8/classMERO__LOG.html#ac0088591211cd819bbb6f2af8799d3e3">   21</a></span>    <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a>&amp; <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ac0088591211cd819bbb6f2af8799d3e3">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">static</span> MERO_LOG&amp; getInstance() {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">static</span> MERO_LOG instance;</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d0/dd8/classMERO__LOG.html#ac70c7f75fcc6a6815c74365d356fa109">   23</a></span>    <span class="keyword">static</span> <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a>&amp; <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ac70c7f75fcc6a6815c74365d356fa109">getInstance</a>() {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">static</span> <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG</a> instance;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> instance;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    MERO_LOG();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ~MERO_LOG(); </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#acdfef44e80bc49bf3a236c3e69ec3658">MERO_LOG</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="../../d0/dd8/classMERO__LOG.html#a97b79402b11cdae44cf91c6adbff509c">~MERO_LOG</a>(); </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// MERO_LOG_HPP</span></div>
 <div class="ttc" id="aclassMERO__LOG_html_a887f8f8ef899f42e58fc9a89c7a77939"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#a887f8f8ef899f42e58fc9a89c7a77939">MERO_LOG::LOG</a></div><div class="ttdeci">void LOG(std::string data, bool err=false, std::source_location cur=std::source_location::current())</div><div class="ttdef"><b>Definition</b> MERO_LOG.cpp:12</div></div>
+<div class="ttc" id="aclassMERO__LOG_html_a97b79402b11cdae44cf91c6adbff509c"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#a97b79402b11cdae44cf91c6adbff509c">MERO_LOG::~MERO_LOG</a></div><div class="ttdeci">~MERO_LOG()</div><div class="ttdef"><b>Definition</b> MERO_LOG.cpp:33</div></div>
+<div class="ttc" id="aclassMERO__LOG_html_ab804848255aebec9dd8c5fa183fba195"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#ab804848255aebec9dd8c5fa183fba195">MERO_LOG::MERO_LOG</a></div><div class="ttdeci">MERO_LOG(const MERO_LOG &amp;)=delete</div></div>
+<div class="ttc" id="aclassMERO__LOG_html_ac0088591211cd819bbb6f2af8799d3e3"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#ac0088591211cd819bbb6f2af8799d3e3">MERO_LOG::operator=</a></div><div class="ttdeci">MERO_LOG &amp; operator=(const MERO_LOG &amp;)=delete</div></div>
+<div class="ttc" id="aclassMERO__LOG_html_ac70c7f75fcc6a6815c74365d356fa109"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#ac70c7f75fcc6a6815c74365d356fa109">MERO_LOG::getInstance</a></div><div class="ttdeci">static MERO_LOG &amp; getInstance()</div><div class="ttdef"><b>Definition</b> MERO_LOG.hpp:23</div></div>
+<div class="ttc" id="aclassMERO__LOG_html_acdfef44e80bc49bf3a236c3e69ec3658"><div class="ttname"><a href="../../d0/dd8/classMERO__LOG.html#acdfef44e80bc49bf3a236c3e69ec3658">MERO_LOG::MERO_LOG</a></div><div class="ttdeci">MERO_LOG()</div><div class="ttdef"><b>Definition</b> MERO_LOG.cpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><b>MERO_LOG.hpp</b></li>
+    <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../d4/d86/MERO__LOG_8hpp.html">MERO_LOG.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

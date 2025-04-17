@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['log_0',['LOG',['../d0/dd8/classMERO__LOG.html#a887f8f8ef899f42e58fc9a89c7a77939',1,'MERO_LOG']]]
+  ['eof_0',['eof',['../da/d02/structstbi__io__callbacks.html#a319639db2f76e715eed7a7a974136832',1,'stbi_io_callbacks']]],
+  ['error_5fcallback_1',['error_callback',['../d4/dcc/MERO_8cpp.html#a4ee391c8bab624943c822faafb2c320e',1,'MERO.cpp']]]
 ];
