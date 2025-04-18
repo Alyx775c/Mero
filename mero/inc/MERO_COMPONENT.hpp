@@ -9,10 +9,15 @@
  * @brief The base component class, dont use, inherit
  * 
  */
-class C_BaseComponent
+class MeroComponent
 {
 protected:
-    C_BaseComponent(const std::string& componentName)
+    /**
+     * @brief Construct a new Component object
+     * 
+     * @param componentName 
+     */
+    MeroComponent(const std::string& componentName)
         : name(componentName)
     { }
 
@@ -43,7 +48,7 @@ public:
         mECS->PushComponent(this);
     }
 
-    virtual ~C_BaseComponent()
+    virtual ~MeroComponent()
     {
     }
 
@@ -54,6 +59,7 @@ public:
 /**
  * @brief MERO class helper for sprties
  * 
+ * typically used inside of a class with a MERO_SPRITE*
  */
 class MERO_SPRITE
 {

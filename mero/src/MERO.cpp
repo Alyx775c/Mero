@@ -5,7 +5,7 @@
 // shell func
 void error_callback(int error, const char *description)
 {
-    MERO_LOG::getInstance().LOG(std::format("Error {}, description: {}", error, description));
+    MeroLogger::getInstance().LOG(std::format("Error {}, description: {}", error, description));
 }
 
 std::string tFormat(std::string str, bool inTest)
@@ -16,7 +16,7 @@ std::string tFormat(std::string str, bool inTest)
     return str;
 }
 
-MERO::MERO(glm::ivec2 size, const char *name, bool testing)
+Mero::Mero(glm::ivec2 size, const char *name, bool testing)
 {
     if (INIT)
         return;
@@ -24,21 +24,21 @@ MERO::MERO(glm::ivec2 size, const char *name, bool testing)
     INIT = true;
 
     if (!glfwInit())
-        MERO_LOG::getInstance().LOG(tFormat(std::format("Failed to initialize GLFW on window: {}", name), testing), true);
+        MeroLogger::getInstance().LOG(tFormat(std::format("Failed to initialize GLFW on window: {}", name), testing), true);
     else
-        MERO_LOG::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
+        MeroLogger::getInstance().LOG(tFormat(std::format("Successfully initialized GLFW on window: {}", name), testing));
     glfwSetErrorCallback(error_callback);
 
-    window = new C_MeroWindow(size.x, size.y, name);
+    window = new MeroWindow(size.x, size.y, name);
 
     if (!window)
     {
-        MERO_LOG::getInstance().LOG("Failed to initialize C_MeroWindow or its GLFW window.");
+        MeroLogger::getInstance().LOG("Failed to initialize MeroWindow or its GLFW window.", true);
         return;
     }
 }
 
-void MERO::MainLoop()
+void Mero::MainLoop()
 {
     glfwPollEvents();
 
@@ -48,7 +48,7 @@ void MERO::MainLoop()
     window->SwapBuffers();
 }
 
-MERO::~MERO()
+Mero::~Mero()
 {
     Shutdown();
 }

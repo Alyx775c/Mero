@@ -7,18 +7,18 @@ typedef struct GLFWwindow GLFWwindow;
  * @brief Holds window information
  *
  */
-class C_MeroWindow
+class MeroWindow
 {
 public:
 	/**
-	 * @brief Construct a new C_MeroWindow object
+	 * @brief Construct a new MeroWindow object
 	 *
 	 * @param x Width of window
 	 * @param y Height of window
 	 * @param name Name of the new window
 	 */
-	C_MeroWindow(int x, int y, const char *name);
-	~C_MeroWindow();
+	MeroWindow(int x, int y, const char *name);
+	~MeroWindow();
 
 	/**
 	 * @brief Swaps the buffers

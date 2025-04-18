@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_0',['LOG',['../d0/dd8/classMERO__LOG.html#a887f8f8ef899f42e58fc9a89c7a77939',1,'MERO_LOG']]]
+  ['log_0',['LOG',['../dd/dd6/classMeroLogger.html#a2886a4673c60299539975fe02f938ec1',1,'MeroLogger']]]
 ];

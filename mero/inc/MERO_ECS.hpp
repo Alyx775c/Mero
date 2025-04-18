@@ -3,7 +3,7 @@
 
 #include <vector>
 
-class C_BaseComponent;
+class MeroComponent;
 
 /**
  * @brief Mero's ECS system, dont interface directly
@@ -17,7 +17,7 @@ public:
      * 
      * @param comp The component to push
      */
-    void PushComponent(C_BaseComponent* comp); 
+    void PushComponent(MeroComponent* comp); 
 
     int Size()
     {
@@ -25,7 +25,7 @@ public:
     }
 
 private:
-    std::vector<C_BaseComponent*> components;
+    std::vector<MeroComponent*> components;
 };
 
 #endif

@@ -1,9 +1,9 @@
 var annotated_dup =
 [
-    [ "C_BaseComponent", "df/d5f/classC__BaseComponent.html", "df/d5f/classC__BaseComponent" ],
     [ "C_mECS", "da/d36/classC__mECS.html", "da/d36/classC__mECS" ],
-    [ "C_MeroWindow", "d6/d92/classC__MeroWindow.html", "d6/d92/classC__MeroWindow" ],
-    [ "MERO", "dc/d07/classMERO.html", "dc/d07/classMERO" ],
-    [ "MERO_LOG", "d0/dd8/classMERO__LOG.html", "d0/dd8/classMERO__LOG" ],
-    [ "MERO_SPRITE", "db/d1e/classMERO__SPRITE.html", null ]
+    [ "Mero", "d4/d08/classMero.html", "d4/d08/classMero" ],
+    [ "MERO_SPRITE", "db/d1e/classMERO__SPRITE.html", null ],
+    [ "MeroComponent", "d5/d30/classMeroComponent.html", "d5/d30/classMeroComponent" ],
+    [ "MeroLogger", "dd/dd6/classMeroLogger.html", "dd/dd6/classMeroLogger" ],
+    [ "MeroWindow", "df/ddb/classMeroWindow.html", "df/ddb/classMeroWindow" ]
 ];

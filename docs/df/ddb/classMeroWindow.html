@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mero OpenGL Helper: C_mECS Class Reference</title>
+<title>Mero OpenGL Helper: MeroWindow Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('da/d36/classC__mECS.html','../../'); initResizable(true); });
+$(function(){initNavTree('df/ddb/classMeroWindow.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -99,44 +99,67 @@ $(function(){initNavTree('da/d36/classC__mECS.html','../../'); initResizable(tru
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="../../dc/d52/classC__mECS-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">C_mECS Class Reference</div></div>
+<a href="../../d5/dcb/classMeroWindow-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">MeroWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d4/d08/classMero.html" title="Main Mero class, holds all important info.">Mero</a>'s ECS system, dont interface directly.  
+<p>Holds window information.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d6/d04/MERO__ECS_8hpp_source.html">MERO_ECS.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d1/dc5/MERO__WINDOW_8hpp_source.html">MERO_WINDOW.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0837d78d9d940435a01472d94a4cdc66" id="r_a0837d78d9d940435a01472d94a4cdc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0837d78d9d940435a01472d94a4cdc66">PushComponent</a> (<a class="el" href="../../d5/d30/classMeroComponent.html">MeroComponent</a> *comp)</td></tr>
-<tr class="memdesc:a0837d78d9d940435a01472d94a4cdc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new component to the vector.  <br /></td></tr>
-<tr class="separator:a0837d78d9d940435a01472d94a4cdc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea6de235b3c8f45da095883bd785f58" id="r_afea6de235b3c8f45da095883bd785f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea6de235b3c8f45da095883bd785f58">MeroWindow</a> (int x, int y, const char *name)</td></tr>
+<tr class="memdesc:afea6de235b3c8f45da095883bd785f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../df/ddb/classMeroWindow.html" title="Holds window information.">MeroWindow</a> object.  <br /></td></tr>
+<tr class="separator:afea6de235b3c8f45da095883bd785f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496f300c92c4598d0cf8df53e0acd276" id="r_a496f300c92c4598d0cf8df53e0acd276"><td class="memItemLeft" align="right" valign="top"><a id="a496f300c92c4598d0cf8df53e0acd276" name="a496f300c92c4598d0cf8df53e0acd276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwapBuffers</b> ()</td></tr>
+<tr class="memdesc:a496f300c92c4598d0cf8df53e0acd276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the buffers. <br /></td></tr>
+<tr class="separator:a496f300c92c4598d0cf8df53e0acd276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f812477bf1a1909a63d784cc99b7420" id="r_a7f812477bf1a1909a63d784cc99b7420"><td class="memItemLeft" align="right" valign="top"><a id="a7f812477bf1a1909a63d784cc99b7420" name="a7f812477bf1a1909a63d784cc99b7420"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldClose</b> ()</td></tr>
+<tr class="memdesc:a7f812477bf1a1909a63d784cc99b7420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the window close? <br /></td></tr>
+<tr class="separator:a7f812477bf1a1909a63d784cc99b7420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7a5d6a85ed0d8a5c00edcac9189080" id="r_a4b7a5d6a85ed0d8a5c00edcac9189080"><td class="memItemLeft" align="right" valign="top"><a id="a4b7a5d6a85ed0d8a5c00edcac9189080" name="a4b7a5d6a85ed0d8a5c00edcac9189080"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
+<tr class="memdesc:a4b7a5d6a85ed0d8a5c00edcac9189080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the window a valid window? <br /></td></tr>
+<tr class="separator:a4b7a5d6a85ed0d8a5c00edcac9189080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d4/d08/classMero.html" title="Main Mero class, holds all important info.">Mero</a>'s ECS system, dont interface directly. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0837d78d9d940435a01472d94a4cdc66" name="a0837d78d9d940435a01472d94a4cdc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0837d78d9d940435a01472d94a4cdc66">&#9670;&#160;</a></span>PushComponent()</h2>
+<div class="textblock"><p>Holds window information. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afea6de235b3c8f45da095883bd785f58" name="afea6de235b3c8f45da095883bd785f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea6de235b3c8f45da095883bd785f58">&#9670;&#160;</a></span>MeroWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void C_mECS::PushComponent </td>
+          <td class="memname">MeroWindow::MeroWindow </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d30/classMeroComponent.html">MeroComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pushes a new component to the vector. </p>
+<p>Construct a new <a class="el" href="../../df/ddb/classMeroWindow.html" title="Holds window information.">MeroWindow</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">comp</td><td>The component to push </td></tr>
+    <tr><td class="paramname">x</td><td>Width of window </td></tr>
+    <tr><td class="paramname">y</td><td>Height of window </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the new window </td></tr>
   </table>
   </dd>
 </dl>
@@ -144,15 +167,15 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>inc/<a class="el" href="../../d6/d04/MERO__ECS_8hpp_source.html">MERO_ECS.hpp</a></li>
-<li>src/<b>MERO_ECS.cpp</b></li>
+<li>inc/<a class="el" href="../../d1/dc5/MERO__WINDOW_8hpp_source.html">MERO_WINDOW.hpp</a></li>
+<li>src/<b>MERO_WINDOW.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../da/d36/classC__mECS.html">C_mECS</a></li>
+    <li class="navelem"><a class="el" href="../../df/ddb/classMeroWindow.html">MeroWindow</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

@@ -5,4 +5,4 @@
 
 #include "MERO_ECS.hpp"
 
-C_mECS *C_BaseComponent::mECS = new C_mECS();
+C_mECS *MeroComponent::mECS = new C_mECS();

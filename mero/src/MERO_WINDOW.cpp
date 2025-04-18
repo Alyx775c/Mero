@@ -1,7 +1,7 @@
 #include "MERO_WINDOW.hpp"
 #include "MERO.hpp"
 
-C_MeroWindow::C_MeroWindow(int x, int y, const char *name)
+MeroWindow::MeroWindow(int x, int y, const char *name)
 {
     // Remove the GLFW_NO_API hint to allow OpenGL context creation
     glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_API);
@@ -11,29 +11,29 @@ C_MeroWindow::C_MeroWindow(int x, int y, const char *name)
 
     window = glfwCreateWindow(x, y, name, NULL, NULL);
     if (window)
-        MERO_LOG::getInstance().LOG(std::format("Successfully initialized GLFWwindow {}", name));
+        MeroLogger::getInstance().LOG(std::format("Successfully initialized GLFWwindow {}", name));
     else
-        MERO_LOG::getInstance().LOG("Failed to create GLFW window", true);
+        MeroLogger::getInstance().LOG("Failed to create GLFW window", true);
 
     glfwMakeContextCurrent(window);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        MERO_LOG::getInstance().LOG("Failed to initialize GLAD", true);
+        MeroLogger::getInstance().LOG("Failed to initialize GLAD", true);
     }
 }
 
-void C_MeroWindow::SwapBuffers()
+void MeroWindow::SwapBuffers()
 {
     glfwSwapBuffers(window);
 }
 
-bool C_MeroWindow::ShouldClose()
+bool MeroWindow::ShouldClose()
 {
     return glfwWindowShouldClose(window);
 }
 
-C_MeroWindow::~C_MeroWindow()
+MeroWindow::~MeroWindow()
 {
     glfwDestroyWindow(window);
 }

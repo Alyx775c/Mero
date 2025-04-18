@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mero OpenGL Helper: C_mECS Class Reference</title>
+<title>Mero OpenGL Helper: MeroComponent Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('da/d36/classC__mECS.html','../../'); initResizable(true); });
+$(function(){initNavTree('d5/d30/classMeroComponent.html','../../'); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -99,44 +99,68 @@ $(function(){initNavTree('da/d36/classC__mECS.html','../../'); initResizable(tru
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="../../dc/d52/classC__mECS-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">C_mECS Class Reference</div></div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="../../d0/d77/classMeroComponent-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">MeroComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d4/d08/classMero.html" title="Main Mero class, holds all important info.">Mero</a>'s ECS system, dont interface directly.  
+<p>The base component class, dont use, inherit.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d6/d04/MERO__ECS_8hpp_source.html">MERO_ECS.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d3/dec/MERO__COMPONENT_8hpp_source.html">MERO_COMPONENT.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0837d78d9d940435a01472d94a4cdc66" id="r_a0837d78d9d940435a01472d94a4cdc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0837d78d9d940435a01472d94a4cdc66">PushComponent</a> (<a class="el" href="../../d5/d30/classMeroComponent.html">MeroComponent</a> *comp)</td></tr>
-<tr class="memdesc:a0837d78d9d940435a01472d94a4cdc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new component to the vector.  <br /></td></tr>
-<tr class="separator:a0837d78d9d940435a01472d94a4cdc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d14d67a95333153af6344491bc3b4e6" id="r_a2d14d67a95333153af6344491bc3b4e6"><td class="memItemLeft" align="right" valign="top"><a id="a2d14d67a95333153af6344491bc3b4e6" name="a2d14d67a95333153af6344491bc3b4e6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a2d14d67a95333153af6344491bc3b4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializiation method. <br /></td></tr>
+<tr class="separator:a2d14d67a95333153af6344491bc3b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac78eca39175498fd0d50df695646f0" id="r_a3ac78eca39175498fd0d50df695646f0"><td class="memItemLeft" align="right" valign="top"><a id="a3ac78eca39175498fd0d50df695646f0" name="a3ac78eca39175498fd0d50df695646f0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
+<tr class="memdesc:a3ac78eca39175498fd0d50df695646f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to call on tick. <br /></td></tr>
+<tr class="separator:a3ac78eca39175498fd0d50df695646f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb010b6070331b5249715a9fef29ce0e" id="r_acb010b6070331b5249715a9fef29ce0e"><td class="memItemLeft" align="right" valign="top"><a id="acb010b6070331b5249715a9fef29ce0e" name="acb010b6070331b5249715a9fef29ce0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> ()</td></tr>
+<tr class="memdesc:acb010b6070331b5249715a9fef29ce0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call! Check out tApp.cpp for example. <br /></td></tr>
+<tr class="separator:acb010b6070331b5249715a9fef29ce0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af37ccb76587dbdfd3cd1f52129f44753" id="r_af37ccb76587dbdfd3cd1f52129f44753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af37ccb76587dbdfd3cd1f52129f44753">MeroComponent</a> (const std::string &amp;componentName)</td></tr>
+<tr class="memdesc:af37ccb76587dbdfd3cd1f52129f44753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Component object.  <br /></td></tr>
+<tr class="separator:af37ccb76587dbdfd3cd1f52129f44753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d4/d08/classMero.html" title="Main Mero class, holds all important info.">Mero</a>'s ECS system, dont interface directly. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0837d78d9d940435a01472d94a4cdc66" name="a0837d78d9d940435a01472d94a4cdc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0837d78d9d940435a01472d94a4cdc66">&#9670;&#160;</a></span>PushComponent()</h2>
+<div class="textblock"><p>The base component class, dont use, inherit. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af37ccb76587dbdfd3cd1f52129f44753" name="af37ccb76587dbdfd3cd1f52129f44753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37ccb76587dbdfd3cd1f52129f44753">&#9670;&#160;</a></span>MeroComponent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void C_mECS::PushComponent </td>
+          <td class="memname">MeroComponent::MeroComponent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d30/classMeroComponent.html">MeroComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>componentName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Pushes a new component to the vector. </p>
+<p>Construct a new Component object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">comp</td><td>The component to push </td></tr>
+    <tr><td class="paramname">componentName</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -144,15 +168,15 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>inc/<a class="el" href="../../d6/d04/MERO__ECS_8hpp_source.html">MERO_ECS.hpp</a></li>
-<li>src/<b>MERO_ECS.cpp</b></li>
+<li>inc/<a class="el" href="../../d3/dec/MERO__COMPONENT_8hpp_source.html">MERO_COMPONENT.hpp</a></li>
+<li>src/<b>MERO_COMPONENT.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../da/d36/classC__mECS.html">C_mECS</a></li>
+    <li class="navelem"><a class="el" href="../../d5/d30/classMeroComponent.html">MeroComponent</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

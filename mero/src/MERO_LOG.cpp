@@ -9,7 +9,7 @@ std::string GET_NAME(const char *file_name)
     return path.filename().string();
 }
 
-void MERO_LOG::LOG(std::string data, bool err, std::source_location cur)
+void MeroLogger::LOG(std::string data, bool err, std::source_location cur)
 {
     if (err)
     {
@@ -23,13 +23,13 @@ void MERO_LOG::LOG(std::string data, bool err, std::source_location cur)
 #endif // _DEBUG
 }
 
-MERO_LOG::MERO_LOG()
+MeroLogger::MeroLogger()
 {
     /**
      * TODO: Implement AllocConsole() on Windows
      */
 }
 
-MERO_LOG::~MERO_LOG() {
+MeroLogger::~MeroLogger() {
     
 }

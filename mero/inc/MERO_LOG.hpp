@@ -7,7 +7,7 @@
 /**
  * @brief Main logger source for MERO
  */
-class MERO_LOG
+class MeroLogger
 {
 public:
     /**
@@ -21,16 +21,16 @@ public:
 
     // Singleton stuff
     
-    MERO_LOG(const MERO_LOG&) = delete;
-    MERO_LOG& operator=(const MERO_LOG&) = delete;
+    MeroLogger(const MeroLogger&) = delete;
+    MeroLogger& operator=(const MeroLogger&) = delete;
     
-    static MERO_LOG& getInstance() {
-        static MERO_LOG instance;
+    static MeroLogger& getInstance() {
+        static MeroLogger instance;
         return instance;
     }
 private:
-    MERO_LOG();
-    ~MERO_LOG(); 
+    MeroLogger();
+    ~MeroLogger(); 
 };
 
 #endif // MERO_LOG_HPP

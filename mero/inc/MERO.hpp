@@ -28,21 +28,21 @@
 #include "MERO_WINDOW.hpp"
 
 /**
- * @brief Main MERO class, holds all important info
+ * @brief Main Mero class, holds all important info
  * 
  */
-class MERO
+class Mero
 {
 public:
     /**
-     * @brief Makes a new MERO instance
+     * @brief Makes a new Mero instance
      * 
      * @param size Size of window
      * @param name Name of the new window
      * @param testing Configures more verbose output ( planned in the future )
      */
-    MERO(glm::ivec2 size, const char* name, bool testing = false);
-    ~MERO();
+    Mero(glm::ivec2 size, const char* name, bool testing = false);
+    ~Mero();
 
     /**
      * @brief Shuts GLFW and the window down
@@ -63,7 +63,7 @@ public:
     void MainLoop();
     
     /**
-     * @brief Checks if the current C_MeroWindow is valid
+     * @brief Checks if the current MeroWindow is valid
      */
     bool isWindowValid() {
         return window->isValid();
@@ -83,7 +83,7 @@ private:
     }
 
     // has to be a pointer because of the fact that the ctor would shit itself otherwise
-    C_MeroWindow* window;
+    MeroWindow* window;
     // no ent list?? go see MERO_ECS for the actual ecs
     bool INIT;
 };
